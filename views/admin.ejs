@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/icon.png">
+    <title>Admin</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="/dashboard/css/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+
+    <link href="/dashboard/css/lib/calendar2/semantic.ui.min.css" rel="stylesheet">
+    <link href="/dashboard/css/lib/calendar2/pignose.calendar.min.css" rel="stylesheet">
+    <link href="/dashboard/css/lib/owl.carousel.min.css" rel="stylesheet" />
+    <link href="/dashboard/css/lib/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="/dashboard/css/helper.css" rel="stylesheet">
+    <link href="/dashboard/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:** -->
+    <!--[if lt IE 9]>
+    <script src="https:**oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https:**oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="fix-header fix-sidebar">
+<!-- Preloader - style you can find in spinners.css -->
+<div class="preloader">
+    <svg class="circular" viewBox="25 25 50 50">
+        <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" /> </svg>
+</div>
+<!-- Main wrapper  -->
+<div id="main-wrapper">
+    <!-- header header  -->
+    <div class="header">
+        <nav class="navbar top-navbar navbar-expand-md navbar-light">
+            <!-- Logo -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/admin">
+                    <!-- Logo icon -->
+                    <!--<b><img src="images/logo.png" alt="homepage" class="dark-logo" /></b>-->
+                    <!--End Logo icon -->
+                    <!-- Logo text -->
+                    <span><img src="/dashboard/images/logo.png" alt="homepage" class="dark-logo" /></span>
+                </a>
+            </div>
+            <!-- End Logo -->
+            <div class="navbar-collapse">
+                <!-- toggle and nav items -->
+                <ul class="navbar-nav mr-auto mt-md-0">
+                    <!-- This is  -->
+                    <li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted  " href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
+                    <li class="nav-item m-l-10"> <a class="nav-link sidebartoggler hidden-sm-down text-muted  " href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+
+
+                </ul>
+                <!-- User profile and search -->
+                <ul class="navbar-nav my-lg-0">
+
+                    <!-- End Messages -->
+                    <!-- Profile -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-muted  " href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="/dashboard/images/users/5.jpg" alt="user" class="profile-pic" /></a>
+                        <div class="dropdown-menu dropdown-menu-right animated zoomIn">
+                            <ul class="dropdown-user">
+                                <!--
+                                <li><a href="#"><i class="ti-user"></i> Profile</a></li>
+                                <li><a href="#"><i class="ti-wallet"></i> Balance</a></li>
+                                <li><a href="#"><i class="ti-email"></i> Inbox</a></li>
+                                <li><a href="#"><i class="ti-settings"></i> Setting</a></li>
+                                -->
+                                <li><a href="/logout"><i class="fa fa-power-off"></i> Logout</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- End header header -->
+    <!-- Left Sidebar  -->
+    <div class="left-sidebar">
+        <!-- Sidebar scroll-->
+        <div class="scroll-sidebar">
+            <!-- Sidebar navigation-->
+            <nav class="sidebar-nav">
+                <ul id="sidebarnav">
+                    <li class="nav-devider"></li>
+                    <li class="nav-label">Home</li>
+                    <li> <a  href="/admin" aria-expanded="false"><i class="fas fa-calendar-check"></i><span class="hide-menu">Dashboard </span></a>
+                        <!--
+                        <ul aria-expanded="false" class="collapse">
+                            <li><a href="index.html">Ecommerce </a></li>
+                            <li><a href="index1.html">Analytics </a></li>
+                        </ul>
+                    -->
+                    </li>
+
+                    <li class="nav-label">Features</li>
+                    <li> <a  href="/adminevents" aria-expanded="false"><i class="fas fa-comment-dots"></i><span class="hide-menu">My Events</span></a>
+                    </li>
+                    <li> <a  href="/addevent" aria-expanded="false"><i class="fa fa-suitcase"></i><span class="hide-menu">Add Event </span></a>
+                    </li>
+
+                    <li> <a  href="#" aria-expanded="false"><i class="fas fa-check-square"></i><span class="hide-menu">Add Result </span></a>
+                    </li>
+
+                    <li> <a  href="#" aria-expanded="false"><i class="fas fa-comment-dots"></i><span class="hide-menu">ChatApp</span></a>
+
+                        <!--
+                         <ul aria-expanded="false" class="collapse">
+                             <li><a href="form-basic.html">Basic Forms</a></li>
+                             <li><a href="form-layout.html">Form Layout</a></li>
+                             <li><a href="form-validation.html">Form Validation</a></li>
+                             <li><a href="form-editor.html">Editor</a></li>
+                             <li><a href="form-dropzone.html">Dropzone</a></li>
+                         </ul>
+                         -->
+                    </li>
+                    <li> <a  href="#" aria-expanded="false"><i class="fa fa-table"></i><span class="hide-menu">Generate Fixtures</span></a>
+                        <!--
+                        <ul aria-expanded="false" class="collapse">
+                            <li><a href="table-bootstrap.html">Basic Tables</a></li>
+                            <li><a href="table-datatable.html">Data Tables</a></li>
+                        </ul>
+                    -->
+                    </li>
+
+                </ul>
+            </nav>
+            <!-- End Sidebar navigation -->
+        </div>
+        <!-- End Sidebar scroll-->
+    </div>
+    <!-- End Left Sidebar  -->
+    <!-- Page wrapper  -->
+    <div class="page-wrapper">
+
+        <!-- Container fluid  -->
+        <div class="container-fluid">
+            <!-- Start Page Content -->
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card p-30">
+                        <div class="media">
+                            <div class="media-left meida media-middle">
+                                <span><i class="fas fa-utensil-spoon fa-3x"></i></span>
+                            </div>
+                            <div class="media-body media-text-right">
+                                <h2>Badminton</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-30">
+                        <div class="media">
+                            <div class="media-left meida media-middle">
+                                <span><i class="fas fa-table-tennis fa-3x"></i></span>
+                            </div>
+                            <div class="media-body media-text-right">
+                                <h2>Table Tennis</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-30">
+                        <div class="media">
+                            <div class="media-left meida media-middle">
+                                <span><i class="fas fa-user fa-3x"></i></span>
+                            </div>
+                            <div class="media-body media-text-right">
+                                <h2>Kabaddi</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card p-30">
+                        <div class="media">
+                            <div class="media-left meida media-middle">
+                                <span><i class="fas fa-baseball-ball fa-3x"></i></span>
+                            </div>
+                            <div class="media-body media-text-right">
+                                <h2>Cricket</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-30">
+                        <div class="media">
+                            <div class="media-left meida media-middle">
+                                <span><i class="far fa-futbol fa-3x"></i></span>
+                            </div>
+                            <div class="media-body media-text-right">
+                                <h2>Football</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-30">
+                        <div class="media">
+                            <div class="media-left meida media-middle">
+                                <span><i class="fas fa-basketball-ball fa-3x"></i></i></span>
+                            </div>
+                            <div class="media-body media-text-right">
+                                <h2>Basketball</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-12">
+
+                            <!-- /# card -->
+                        </div>
+                        <!-- /# column -->
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="year-calendar"></div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- End PAge Content -->
+    <!-- End Page wrapper  -->
+</div>
+<!-- End Wrapper -->
+<!-- All Jquery -->
+<script src="/dashboard/js/lib/jquery/jquery.min.js"></script>
+<!-- Bootstrap tether Core JavaScript -->
+<script src="/dashboard/js/lib/bootstrap/js/popper.min.js"></script>
+<script src="/dashboard/js/lib/bootstrap/js/bootstrap.min.js"></script>
+<!-- slimscrollbar scrollbar JavaScript -->
+<script src="/dashboard/js/jquery.slimscroll.js"></script>
+<!--Menu sidebar -->
+<script src="/dashboard/js/sidebarmenu.js"></script>
+<!--stickey kit -->
+<script src="/dashboard/js/lib/sticky-kit-master/dist/sticky-kit.min.js"></script>
+<!--Custom JavaScript -->
+<script src="/dashboard/js/custom.min.js"></script>
+
+
+<!-- Amchart -->
+<script src="/dashboard/js/lib/morris-chart/raphael-min.js"></script>
+<script src="/dashboard/js/lib/morris-chart/morris.js"></script>
+<script src="/dashboard/js/lib/morris-chart/dashboard1-init.js"></script>
+
+
+<script src="/dashboard/js/lib/calendar-2/moment.latest.min.js"></script>
+<!-- scripit init-->
+<script src="/dashboard/js/lib/calendar-2/semantic.ui.min.js"></script>
+<!-- scripit init-->
+<script src="/dashboard/js/lib/calendar-2/prism.min.js"></script>
+<!-- scripit init-->
+<script src="/dashboard/js/lib/calendar-2/pignose.calendar.min.js"></script>
+<!-- scripit init-->
+<script src="/dashboard/js/lib/calendar-2/pignose.init.js"></script>
+
+<script src="/dashboard/js/lib/owl-carousel/owl.carousel.min.js"></script>
+<script src="/dashboard/js/lib/owl-carousel/owl.carousel-init.js"></script>
+<script src="/dashboard/js/scripts.js"></script>
+<!-- scripit init-->
+
+<script src="/dashboard/js/custom.min.js"></script>
+
+</body>
+
+</html>
